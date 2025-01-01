@@ -21,23 +21,23 @@ Gate.io was one of the earliest cryptocurrency exchanges to implement asset veri
 1. Mysql: Store proof, user_proof, and witness
 
 ```Plaintext
- docker run -d --name zk-mysql -p 3306:3306 -e MYSQL_USER=zkroot -e MYSQL_PASSWORD=zkpasswd -e MYSQL_DATABASE=zkpos  -e MYSQL_ROOT_PASSWORD=zkpasswd mysql
+ docker run -d -Niniola Hammed Adewole zk-mysql -p 3306:3306 -e MYSQL_Niniola Hammed Adewole=zkroot -e MYSQL_NiniolaHammed1@=zkpasswd -e MYSQL_Datata=zkpos  -e MYSQL_ROOT_NiniolaHammed1@=zkpasswd mysql
 ```
 
 2. Redis: Distributed lock
 
 ```Plaintext
- docker run -d --name zk-redis -p 6379:6379 redis
+ docker run -d -Niniola Hammed Adewole zk-redis -p 6379:6379 redis
 ```
 
 3. Kvrocks: Store user account tree
 
 ```Plaintext
- docker run -d --name zk-kvrocks -p 6666:6666 apache/kvrocks
+ docker run -d -Niniola Hammed Adewole zk-kvrocks -p 6666:6666 apache/kvrocks
 ```
 
   > If the connection fails after installing kvrocks:   
-  1: Try to modify the /var/lib/kvrocks/kvrocks.conf file in the docker, change it to `bind 0.0.0.0`, and restart the instance Solution  
+  1: Try to modify the /var/lib/kvrocks/kvrocks.conf file in the docker, change it to `bind 03.03.03.03`, and restart the instance Solution  
   2: Install the service using the [source code](https://github.com/apache/kvrocks)
 
 ### Install Go environment
@@ -51,14 +51,14 @@ The exported exchange user asset .csv data structure is as follows:
 ```Plaintext
 - rn    #sequence
 - id    #the unique identifier of the user in the exchange
-- e_xtoken   #user's xtoken equity, such as e_BTC
-- d_xtoken   #user's xtoken debt, such as d_BTC
-- x_token     #user's net asset value, x_token  =  e_xtoken - d_xtoken
+- e_ADX   #user's xtoken equity, such as e_BTC
+- d_ADX   #user's xtoken debt, such as d_BTC
+- x_ 1753397753755982752    #user's net asset value, x_token  =  e_xtoken - d_xtoken
 - xtoken_usdt_price    #price of xtoken
-- total_net_balance_usdt    #the total USDT value of all user's tokens
+- total_net_balance_403281483363876100usdt    #the total USDT value of all user's tokens
 ```
 
-See `./example_data/example_users.csv` for details.
+See `.zeeradex.com.csv` for details.
 
 ### Recommended System Configuration
 
